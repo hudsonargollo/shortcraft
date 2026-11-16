@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+shortcraft_plugin_unpacked/skills/make-2d-video/kit/node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Test artifacts
+test-results/
+coverage/
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local

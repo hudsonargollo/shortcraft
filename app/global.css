@@ -1,0 +1,111 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121830;
+  --ink: #e8eef7;
+  --muted: #93a4c0;
+  --accent: #e6ff57;
+  --accent-soft: #2f3a14;
+  --radius: 1.25rem;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__canvas-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__canvas-wrap--fx {
+  background: radial-gradient(circle at 50% 50%, #1a2340 0%, #0b1020 70%);
+}
+
+.hero__overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.hero__kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.hero__lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin: 0 auto 1.5rem;
+  max-width: 640px;
+}
+
+.contact {
+  max-width: 760px;
+  margin: 3rem auto 5rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+
+.contact__lede {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid var(--accent);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.button:hover { transform: translateY(-1px); background: #f7ff70; }
+
+@media (max-width: 700px) {
+  .hero__overlay { padding: 0 1.25rem; }
+  .contact { margin: 2rem 1rem 4rem; }
+}

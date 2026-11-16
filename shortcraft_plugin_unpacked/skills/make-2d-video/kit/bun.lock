@@ -1,0 +1,31 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "growkaz-stickman-studio",
+      "dependencies": {
+        "@fontsource/fredoka": "5.1.0",
+        "@fontsource/nunito": "5.1.0",
+        "@fontsource/playfair-display": "5.1.0",
+        "playwright": "1.56.0",
+        "three": "0.169.0",
+      },
+    },
+  },
+  "packages": {
+    "@fontsource/fredoka": ["@fontsource/fredoka@5.1.0", "", {}, "sha512-xlj/Q2NU1RyqHOaRCGyyDrahc4mRf4LZ2nFAH1stFltK1xNzDnsXwLCHPtKL34SyiiYVVJaQ3jYz3cBY0m6Gsg=="],
+
+    "@fontsource/nunito": ["@fontsource/nunito@5.1.0", "", {}, "sha512-+FuA/uyHXZPHAgNOmLq0GtsCAqx9IQjNnUyuGJYDl6xe+B2UIQO2pUFbWiWPfpYM7UfiPU9DBIT7s7Z9iGFoRw=="],
+
+    "@fontsource/playfair-display": ["@fontsource/playfair-display@5.1.0", "", {}, "sha512-O4Ph7IwM2sH4IpSgYKP1ZdOuaYd22+eXdT1jU8/kDM6gIABV2RoqJM34Z+WD364+mO1noXPcF1ZtA4aRfcFZLA=="],
+
+    "fsevents": ["fsevents@2.3.2", "", { "os": "darwin", "hasInstallScript": true }, "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="],
+
+    "playwright": ["playwright@1.56.0", "", { "dependencies": { "playwright-core": "1.56.0" }, "optionalDependencies": { "fsevents": "2.3.2" }, "bin": { "playwright": "cli.js" } }, "sha512-X5Q1b8lOdWIE4KAoHpW3SE8HvUB+ZZsUoN64ZhjnN8dOb1UpujxBtENGiZFE+9F/yhzJwYa+ca3u43FeLbboHA=="],
+
+    "playwright-core": ["playwright-core@1.56.0", "", { "bin": { "playwright-core": "cli.js" } }, "sha512-1SXl7pMfemAMSDn5rkPeZljxOCYAmQnYLBTExuh6E8USHXGSX3dx6lYZN/xPpTz1vimXmPA9CDnILvmJaB8aSQ=="],
+
+    "three": ["three@0.169.0", "", {}, "sha512-Ed906MA3dR4TS5riErd4QBsRGPcx+HBDX2O5yYE5GqJeFQTPU+M56Va/f/Oph9X7uZo3W3o4l2ZhBZ6f6qUv0w=="],
+  }
+}
