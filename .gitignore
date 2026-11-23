@@ -20,3 +20,16 @@ coverage/
 .env
 .env.local
 .env.*.local
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# OpenNext / Wrangler build leftovers
+.open-next/
+.wrangler/
+
+# Runtime project data (projects/<slug>/)
+projects/
+
+# Raw session export
+qoderhistory.md

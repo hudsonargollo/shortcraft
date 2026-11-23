@@ -1,0 +1,13 @@
+{
+  "name": "@shortcraft/pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./prompts": "./prompts.ts",
+    "./engine-evolution": "./engine-evolution.ts",
+    "./engine-sd": "./engine-sd.ts"
+  }
+}
